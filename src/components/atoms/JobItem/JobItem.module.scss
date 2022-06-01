@@ -2,7 +2,67 @@
 
 .wrapper {
   display: flex;
-  height: 100px;
+  align-items: center;
+  height: 200px;
+  width: 100%; 
+  margin: 15px;
+  padding: 5px;
   background-color: $white;
-  margin: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  .logoWrapper {
+    padding: 25px;
+  }
+
+  .descriptionWrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    row-gap: 20px;
+
+    .mainInfoWrapper {
+      display: flex;
+      align-items: center;
+      column-gap: 15px;
+
+      .new {
+        display: block;
+        padding: 5px 10px;
+        border-radius: 20px;
+        background-color: $primary-cyan;
+        text-transform: uppercase;
+        color: $white;
+      }
+
+      .featured {
+        display: block;
+        padding: 5px 10px;
+        border-radius: 20px;
+        background-color: $very-dark-grayish;
+        text-transform: uppercase;
+        color: $white;
+      }
+    }
+
+    .detailsWrapper {
+      display: flex;
+      column-gap: 15px;
+      color: $dark-grayish;
+    }
+
+    .company {
+      font-weight: $bold-weight;
+    }
+
+    .position {
+      font-weight: $bold-weight;
+      color: $black;
+    }
+  }
+
+  .filtersWrapper {
+    display: flex;
+    column-gap: 15px;
+    padding: 0 55px;
+  }
 }

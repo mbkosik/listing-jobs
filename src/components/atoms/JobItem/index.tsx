@@ -14,26 +14,31 @@ export const JobItem: FC<IJobItemProps> = ({
   languages,
   tools,
 }) => {
+  const filterContent = [...languages, ...tools];
+
   return (
     <div className={styles.wrapper}>
-      <h2>{company}</h2>
-      <img src={logo} alt={company} />
-      {isNew && <p>New</p>}
-      {isFeatured && <p>Featured</p>}
-      <p>{position}</p>
-      <p>{postedAt}</p>
-      <p>{contract}</p>
-      <p>{location}</p>
-      <ul>
-        {languages.map((lang) => (
-          <li>{lang}</li>
+      <div className={styles.logoWrapper}>
+        <img src={logo} alt={company} />
+      </div>
+      <div className={styles.descriptionWrapper}>
+        <div className={styles.mainInfoWrapper}>
+          <h3 className={styles.company}>{company}</h3>
+          {isNew && <p className={styles.new}>New</p>}
+          {isFeatured && <p className={styles.featured}>Featured</p>}
+        </div>
+        <h2 className={styles.position}>{position}</h2>
+        <div className={styles.detailsWrapper}>
+          <p>{postedAt}</p>
+          <p>{contract}</p>
+          <p>{location}</p>
+        </div>
+      </div>
+      <div className={styles.filtersWrapper}>
+        {filterContent.map((item) => (
+          <p>{item}</p>
         ))}
-      </ul>
-      <ul>
-        {tools.map((tool) => (
-          <li>{tool}</li>
-        ))}
-      </ul>
+      </div>
     </div>
   );
 };
