@@ -9,13 +9,29 @@ import Logo8 from './../assets/insure.svg';
 import Logo9 from './../assets/eyecam-co.svg';
 import Logo10 from './../assets/the-air-filter-company.svg';
 
-const JOB_DATA = [
+export interface IJobDataProps {
+  id: number;
+  company: string;
+  logo: string;
+  isNew: boolean;
+  isFeatured: boolean;
+  position: string;
+  role: string;
+  level: string;
+  postedAt: string;
+  contract: string;
+  location: string;
+  languages: string[];
+  tools: string[]
+};
+
+export const JOB_DATA: IJobDataProps[] = [
   {
     "id": 1,
     "company": "Photosnap",
     "logo": Logo1,
-    "new": true,
-    "featured": true,
+    "isNew": true,
+    "isFeatured": true,
     "position": "Senior Frontend Developer",
     "role": "Frontend",
     "level": "Senior",
@@ -29,8 +45,8 @@ const JOB_DATA = [
     "id": 2,
     "company": "Manage",
     "logo": Logo2,
-    "new": true,
-    "featured": true,
+    "isNew": true,
+    "isFeatured": true,
     "position": "Fullstack Developer",
     "role": "Fullstack",
     "level": "Midweight",
@@ -44,8 +60,8 @@ const JOB_DATA = [
     "id": 3,
     "company": "Account",
     "logo": Logo3,
-    "new": true,
-    "featured": false,
+    "isNew": true,
+    "isFeatured": false,
     "position": "Junior Frontend Developer",
     "role": "Frontend",
     "level": "Junior",
@@ -59,8 +75,8 @@ const JOB_DATA = [
     "id": 4,
     "company": "MyHome",
     "logo": Logo4,
-    "new": false,
-    "featured": false,
+    "isNew": false,
+    "isFeatured": false,
     "position": "Junior Frontend Developer",
     "role": "Frontend",
     "level": "Junior",
@@ -74,8 +90,8 @@ const JOB_DATA = [
     "id": 5,
     "company": "Loop Studios",
     "logo": Logo5,
-    "new": false,
-    "featured": false,
+    "isNew": false,
+    "isFeatured": false,
     "position": "Software Engineer",
     "role": "Fullstack",
     "level": "Midweight",
@@ -89,8 +105,8 @@ const JOB_DATA = [
     "id": 6,
     "company": "FaceIt",
     "logo": Logo6,
-    "new": false,
-    "featured": false,
+    "isNew": false,
+    "isFeatured": false,
     "position": "Junior Backend Developer",
     "role": "Backend",
     "level": "Junior",
@@ -104,8 +120,8 @@ const JOB_DATA = [
     "id": 7,
     "company": "Shortly",
     "logo": Logo7,
-    "new": false,
-    "featured": false,
+    "isNew": false,
+    "isFeatured": false,
     "position": "Junior Developer",
     "role": "Frontend",
     "level": "Junior",
@@ -119,8 +135,8 @@ const JOB_DATA = [
     "id": 8,
     "company": "Insure",
     "logo": Logo8,
-    "new": false,
-    "featured": false,
+    "isNew": false,
+    "isFeatured": false,
     "position": "Junior Frontend Developer",
     "role": "Frontend",
     "level": "Junior",
@@ -134,8 +150,8 @@ const JOB_DATA = [
     "id": 9,
     "company": "Eyecam Co.",
     "logo": Logo9,
-    "new": false,
-    "featured": false,
+    "isNew": false,
+    "isFeatured": false,
     "position": "Full Stack Engineer",
     "role": "Fullstack",
     "level": "Midweight",
@@ -149,8 +165,8 @@ const JOB_DATA = [
     "id": 10,
     "company": "The Air Filter Company",
     "logo": Logo10,
-    "new": false,
-    "featured": false,
+    "isNew": false,
+    "isFeatured": false,
     "position": "Front-end Dev",
     "role": "Frontend",
     "level": "Junior",
@@ -161,5 +177,3 @@ const JOB_DATA = [
     "tools": ["React", "Sass"]
   }
 ];
-
-export default JOB_DATA;
