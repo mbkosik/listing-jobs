@@ -1,0 +1,8 @@
+@import './variables/index';
+
+body {
+  font-family: $primary-font;
+  font-size: $default-size;
+  background-color: $light-grayish-bg;
+  color: $primary-cyan;
+}
