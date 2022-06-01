@@ -1,14 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.fb7d5ba3.css",
-    "main.js": "/static/js/main.737a82d6.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/static/css/main.459571ee.css",
+    "main.js": "/static/js/main.59e328ce.js",
+    "static/media/loop-studios.svg": "/static/media/loop-studios.7778c957c5751d1502cc594d020e34ba.svg",
+    "static/media/photosnap.svg": "/static/media/photosnap.5a867c13a374d62b400f967f5469d0b1.svg",
+    "static/media/manage.svg": "/static/media/manage.5a528a9669728fb94c8cac60ad73882f.svg",
+    "static/media/insure.svg": "/static/media/insure.4d535e7e02c25d02b163c28b8d893f42.svg",
+    "static/media/account.svg": "/static/media/account.903d6cd02abadf4b4d6025e127c92838.svg",
+    "static/media/eyecam-co.svg": "/static/media/eyecam-co.0abb14e8a292eed471d54c4bb0eee875.svg",
+    "static/media/shortly.svg": "/static/media/shortly.3c01b577742e2648f6f987e088368dd3.svg",
+    "static/media/myhome.svg": "/static/media/myhome.aaaaa430346f24f652d52f2f1fb2d5b8.svg",
+    "static/media/the-air-filter-company.svg": "/static/media/the-air-filter-company.9b55f6443c39f7b79348bce1335fbc7d.svg",
+    "static/media/faceit.svg": "/static/media/faceit.54a148ce9e8793ff767eb7ad09aa0f8a.svg",
     "index.html": "/index.html",
-    "main.fb7d5ba3.css.map": "/static/css/main.fb7d5ba3.css.map",
-    "main.737a82d6.js.map": "/static/js/main.737a82d6.js.map"
+    "main.459571ee.css.map": "/static/css/main.459571ee.css.map",
+    "main.59e328ce.js.map": "/static/js/main.59e328ce.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb7d5ba3.css",
-    "static/js/main.737a82d6.js"
+    "static/css/main.459571ee.css",
+    "static/js/main.59e328ce.js"
   ]
 }
