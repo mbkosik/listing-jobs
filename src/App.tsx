@@ -1,10 +1,9 @@
-import logo from "./assets/logo.svg";
+import JobList from "./components/organisms/JobList";
+// TODO: implement firebase API for GET data (instead json file), implement POST funcionality (add new job offers)
 
 const App = () => {
   return (
-    <div>
-      <img src={logo} className="App-logo" alt="logo" />
-    </div>
+    <JobList />
   );
 }
 
