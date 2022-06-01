@@ -2,7 +2,7 @@
   "name": "listing-jobs",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mbkosik.github.io/listing-jobs",
+  "homepage": "https://mbkosik.github.io/listing-jobs/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
