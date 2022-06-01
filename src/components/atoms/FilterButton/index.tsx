@@ -1,10 +1,7 @@
-import { FC } from 'react';
-import styles from './FilterButton.module.scss';
+import { FC } from "react";
+import { IFilterButtonProps } from "./types";
+import styles from "./FilterButton.module.scss";
 
-export const FilterButton: FC = () => {
-  return (
-    <div className={styles.wrapper}>
-      <h2>FilterButton</h2>
-    </div>
-  );
+export const FilterButton: FC<IFilterButtonProps> = ({ filter }) => {
+  return <button className={styles.filter}>{filter}</button>;
 };

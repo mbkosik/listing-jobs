@@ -1,12 +1,14 @@
 import { FC } from "react";
+import { FilterButton } from "../FilterButton";
 import { IJobItemProps } from "./types";
+import classNames from "classnames";
 import styles from "./JobItem.module.scss";
 
 export const JobItem: FC<IJobItemProps> = ({ job }) => {
   const filterContent = [job.role, job.level, ...job.languages, ...job.tools];
 
   return (
-    <div className={styles.wrapper}>
+    <div className={classNames([styles.wrapper, job.isFeatured && styles.featured])}>
       <div className={styles.logoWrapper}>
         <img src={job.logo} alt={job.company} />
       </div>
@@ -24,8 +26,8 @@ export const JobItem: FC<IJobItemProps> = ({ job }) => {
         </div>
       </div>
       <div className={styles.filtersWrapper}>
-        {filterContent.map((item) => (
-          <p>{item}</p>
+        {filterContent.map((filter) => (
+          <FilterButton filter={filter} />
         ))}
       </div>
     </div>

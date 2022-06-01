@@ -1,5 +1,16 @@
 @import './../../../styles/variables/index';
 
-.wrapper {
-  background-color: $dark-grayish;
+.filter {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-weight: $bold-weight;
+  background-color: $light-grayish-filter;
+  color: $primary-cyan;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $primary-cyan;
+    color: $light-grayish-filter;
+  }
 }
