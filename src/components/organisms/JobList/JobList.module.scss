@@ -2,7 +2,10 @@
 // TODO: fix imports path
 
 .wrapper {
-  background-color: $dark-grayish;
-  height: 200px;
-  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1200px;
+  height: fit-content;
 }

@@ -1,5 +1,8 @@
 @import './../../../styles/variables/index';
 
 .wrapper {
-  background-color: $dark-grayish;
+  display: flex;
+  height: 100px;
+  background-color: $white;
+  margin: 5px;
 }

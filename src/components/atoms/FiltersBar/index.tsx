@@ -1,11 +1,10 @@
+import { FC } from 'react';
 import styles from './FiltersBar.module.scss';
 
-const FiltersBar = () => {
+export const FiltersBar: FC = () => {
   return (
     <div className={styles.wrapper}>
       <h2>FiltersBar</h2>
     </div>
   );
-}
-
-export default FiltersBar;
+};

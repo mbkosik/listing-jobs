@@ -1,8 +1,19 @@
-[
+import Logo1 from './../assets/photosnap.svg';
+import Logo2 from './../assets/manage.svg';
+import Logo3 from './../assets/account.svg';
+import Logo4 from './../assets/myhome.svg';
+import Logo5 from './../assets/loop-studios.svg';
+import Logo6 from './../assets/faceit.svg';
+import Logo7 from './../assets/shortly.svg';
+import Logo8 from './../assets/insure.svg';
+import Logo9 from './../assets/eyecam-co.svg';
+import Logo10 from './../assets/the-air-filter-company.svg';
+
+const JOB_DATA = [
   {
     "id": 1,
     "company": "Photosnap",
-    "logo": "./images/photosnap.svg",
+    "logo": Logo1,
     "new": true,
     "featured": true,
     "position": "Senior Frontend Developer",
@@ -17,7 +28,7 @@
   {
     "id": 2,
     "company": "Manage",
-    "logo": "./images/manage.svg",
+    "logo": Logo2,
     "new": true,
     "featured": true,
     "position": "Fullstack Developer",
@@ -32,7 +43,7 @@
   {
     "id": 3,
     "company": "Account",
-    "logo": "./images/account.svg",
+    "logo": Logo3,
     "new": true,
     "featured": false,
     "position": "Junior Frontend Developer",
@@ -47,7 +58,7 @@
   {
     "id": 4,
     "company": "MyHome",
-    "logo": "./images/myhome.svg",
+    "logo": Logo4,
     "new": false,
     "featured": false,
     "position": "Junior Frontend Developer",
@@ -62,7 +73,7 @@
   {
     "id": 5,
     "company": "Loop Studios",
-    "logo": "./images/loop-studios.svg",
+    "logo": Logo5,
     "new": false,
     "featured": false,
     "position": "Software Engineer",
@@ -77,7 +88,7 @@
   {
     "id": 6,
     "company": "FaceIt",
-    "logo": "./images/faceit.svg",
+    "logo": Logo6,
     "new": false,
     "featured": false,
     "position": "Junior Backend Developer",
@@ -92,7 +103,7 @@
   {
     "id": 7,
     "company": "Shortly",
-    "logo": "./images/shortly.svg",
+    "logo": Logo7,
     "new": false,
     "featured": false,
     "position": "Junior Developer",
@@ -102,12 +113,12 @@
     "contract": "Full Time",
     "location": "Worldwide",
     "languages": ["HTML", "JavaScript"],
-    "tools": ["Sass"]
+    "tools": ["Sass", "React"]
   },
   {
     "id": 8,
     "company": "Insure",
-    "logo": "./images/insure.svg",
+    "logo": Logo8,
     "new": false,
     "featured": false,
     "position": "Junior Frontend Developer",
@@ -122,7 +133,7 @@
   {
     "id": 9,
     "company": "Eyecam Co.",
-    "logo": "./images/eyecam-co.svg",
+    "logo": Logo9,
     "new": false,
     "featured": false,
     "position": "Full Stack Engineer",
@@ -137,7 +148,7 @@
   {
     "id": 10,
     "company": "The Air Filter Company",
-    "logo": "./images/the-air-filter-company.svg",
+    "logo": Logo10,
     "new": false,
     "featured": false,
     "position": "Front-end Dev",
@@ -149,4 +160,6 @@
     "languages": ["JavaScript"],
     "tools": ["React", "Sass"]
   }
-]
+];
+
+export default JOB_DATA;
