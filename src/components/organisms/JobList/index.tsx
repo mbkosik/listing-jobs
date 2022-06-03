@@ -11,6 +11,7 @@ export const JobList: FC = () => {
       {JOB_DATA.map((job) => (
         <JobItem
           job={job}
+          key={job.id}
         />
       ))}
     </div>
