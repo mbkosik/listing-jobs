@@ -8,48 +8,51 @@ export enum ActionType {
 export type TJobContext = {
   state: IState;
   dispatch: React.Dispatch<TAction>;
-}
+};
 
 export interface IState {
   activeFilters: Array<string>;
 }
 
-export type TAction = 
+export type TAction =
   | {
-    type: ActionType.SET_ACTIVE_FILTER;
-    payload: string;
-  } 
+      type: ActionType.SET_ACTIVE_FILTER;
+      payload: string;
+    }
   | {
-    type: ActionType.RESET;
-  };
+      type: ActionType.RESET;
+    };
 
 const initialState = {
-  activeFilters: []
-}
+  activeFilters: [],
+};
 
 export const JobStore = React.createContext<TJobContext | undefined>({
-  state: initialState, 
+  state: initialState,
   dispatch: () => null,
 });
 
 export const useJobStore = () => {
   const context = React.useContext(JobStore);
   if (context === undefined) {
-    throw new Error('context is undefined');
+    throw new Error("context is undefined");
   }
-  return context
-}
+  return context;
+};
 
 export const jobReducer = (state: IState, action: TAction) => {
   switch (action.type) {
     case ActionType.SET_ACTIVE_FILTER:
-      return {...state, activeFilters: [...state.activeFilters, action.payload]};
+      return {
+        ...state,
+        activeFilters: [...state.activeFilters, action.payload],
+      };
     case ActionType.RESET:
-      return {...initialState};
+      return { ...initialState };
     default:
       return state;
   }
-}
+};
 
 export interface IJobProviderProps {
   children: React.ReactNode;
@@ -59,8 +62,8 @@ export const JobProvider: React.FC<IJobProviderProps> = (props) => {
   const [state, dispatch] = useReducer(jobReducer, initialState);
 
   return (
-    <JobStore.Provider value={{state, dispatch}}>
+    <JobStore.Provider value={{ state, dispatch }}>
       {props.children}
     </JobStore.Provider>
-  )
-}
+  );
+};
