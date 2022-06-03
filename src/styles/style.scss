@@ -3,9 +3,13 @@
 body {
   height: fit-content;
   font-family: $primary-font;
-  font-size: $default-size;
+  font-size: $small-size;
   background-color: $light-grayish-bg;
   color: $primary-cyan;
+
+  @media (min-width: $screen-sm) {
+    font-size: $default-size;
+  }
 }
 
 // TODO: add background-image

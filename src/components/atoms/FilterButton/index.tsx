@@ -6,4 +6,5 @@ export const FilterButton: FC<IFilterButtonProps> = ({ filter, onClick }) => (
   <button className={styles.filter} onClick={onClick}>
     {filter}
   </button>
+  // TODO: add X button for removing
 );

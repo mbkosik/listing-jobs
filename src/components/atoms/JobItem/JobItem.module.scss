@@ -1,29 +1,52 @@
-@import './../../../styles/variables/index';
+@import "./../../../styles/variables/index";
 
 .wrapper {
   display: flex;
-  align-items: center;
-  height: 200px;
-  width: 100%; 
+  flex-direction: column;
+  height: fit-content;
   margin: 15px;
   padding: 5px;
   border-radius: 4px;
   background-color: $white;
   box-shadow: $boxShadow;
 
+  @media (min-width: $screen-md) {
+    flex-direction: row;
+    align-items: center;
+  }
+
   &.featured {
     border-left: 5px solid $primary-cyan;
   }
 
   .logoWrapper {
-    padding: 25px;
+    width: 70px;
+    height: 70px;
+    transform: translateY(-50%);
+    @media (min-width: $screen-md) {
+      width: unset;
+      height: unset;
+      transform: unset;
+      padding: 25px;
+    }
   }
+
+  // TODO: set different width/height values in case if uploaded bigger image
 
   .descriptionWrapper {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    row-gap: 20px;
+    row-gap: 12px;
+    margin-left: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $dark-grayish;
+
+    @media (min-width: $screen-md) {
+      row-gap: 20px;
+      padding-bottom: unset;
+      border: unset;
+    }
 
     .mainInfoWrapper {
       display: flex;
@@ -74,7 +97,16 @@
 
   .filtersWrapper {
     display: flex;
+    flex-wrap: wrap;
     column-gap: 15px;
-    padding: 0 55px;
+    row-gap: 10px;
+    margin-left: 10px;
+    padding: 15px 0 15px 0;
+
+    @media (min-width: $screen-lg) {
+      row-gap: unset;
+      padding: 0 55px;
+      margin-left: unset;
+    }
   }
 }

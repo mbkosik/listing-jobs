@@ -3,14 +3,20 @@
 .wrapper {
   display: flex;
   align-items: center;
-  column-gap: 15px;
-  width: 100%;
-  height: 75px;
+  min-height: 75px;
+  height: fit-content;
   margin: 15px;
   padding: 10px;
   border-radius: 4px;
   background-color: $white;
   box-shadow: $boxShadow;
+
+  .filtersWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    row-gap: 10px;
+  }
 
   .clearButton {
     margin-left: auto;

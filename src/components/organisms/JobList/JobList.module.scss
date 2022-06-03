@@ -2,10 +2,18 @@
 // TODO: fix imports path
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
   position: absolute;
   top: 30%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 1200px;
+  width: 100%;
   height: fit-content;
+
+  @media (min-width: $screen-xl) {
+    row-gap: unset;
+    left: 50%;
+    width: 1200px;
+    transform: translateX(-50%);
+  }
 }
