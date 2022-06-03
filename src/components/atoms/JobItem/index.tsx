@@ -1,23 +1,28 @@
 import { FC, useEffect, useState, useRef } from "react";
 import { FilterButton } from "../FilterButton";
 import { IJobItemProps } from "./types";
-import { useJobStore } from "../../../context/job.context";
+import { ActionType, useJobStore } from "../../../context/job.context";
 import classNames from "classnames";
 import styles from "./JobItem.module.scss";
 
 export const JobItem: FC<IJobItemProps> = ({ job }) => {
-  const { state } = useJobStore();
+  const { state, dispatch } = useJobStore();
   const [active, setActive] = useState(false); 
   const filterContent = [job.role, job.level, ...job.languages, ...job.tools];
   const jobFiltersRef = useRef(filterContent);
 
+  const handleActiveFilter = (filter: string) => {
+    if (!state.activeFilters.includes(filter)) {
+      dispatch({
+        type: ActionType.SET_ACTIVE_FILTER,
+        payload: filter,
+      });
+    }
+  };
+
   useEffect(() => {
     const activeFilters = state.activeFilters;
-
-    const containsFilters = activeFilters.every(filter => {
-      return jobFiltersRef.current.includes(filter);
-    });
-
+    const containsFilters = activeFilters.every(filter => jobFiltersRef.current.includes(filter));
     setActive(containsFilters);
   }, [state.activeFilters]);
 
@@ -48,7 +53,7 @@ export const JobItem: FC<IJobItemProps> = ({ job }) => {
       </div>
       <div className={styles.filtersWrapper}>
         {filterContent.map((filter, index) => (
-          <FilterButton filter={filter} key={index} />
+          <FilterButton filter={filter} key={index} onClick={() => handleActiveFilter(filter)} />
         ))}
       </div>
     </div>

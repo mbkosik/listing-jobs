@@ -1,22 +1,12 @@
 import { FC } from "react";
 import { IFilterButtonProps } from "./types";
-import { ActionType, useJobStore } from "../../../context/job.context";
 import styles from "./FilterButton.module.scss";
 
-export const FilterButton: FC<IFilterButtonProps> = ({ filter }) => {
-  const { state, dispatch } = useJobStore();
+export const FilterButton: FC<IFilterButtonProps> = ({ filter, onClick }) => {
 
-  const handleActiveFilter = () => {
-    if (!state.activeFilters.includes(filter)) {
-      dispatch({
-        type: ActionType.SET_ACTIVE_FILTER,
-        payload: filter,
-      });
-    }
-  };
 
   return (
-    <button className={styles.filter} onClick={handleActiveFilter}>
+    <button className={styles.filter} onClick={onClick}>
       {filter}
     </button>
   );
