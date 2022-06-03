@@ -2,6 +2,7 @@ import React, { useReducer } from "react";
 
 export enum ActionType {
   SET_ACTIVE_FILTER = "SET_ACTIVE_FILTER",
+  REMOVE_ACTIVE_FILTER = "REMOVE_ACTIVE_FILTER",
   RESET = "RESET",
 }
 
@@ -19,6 +20,10 @@ export type TAction =
       type: ActionType.SET_ACTIVE_FILTER;
       payload: string;
     }
+  | {
+      type: ActionType.REMOVE_ACTIVE_FILTER;
+      payload: string;
+  }
   | {
       type: ActionType.RESET;
     };
@@ -47,6 +52,11 @@ export const jobReducer = (state: IState, action: TAction) => {
         ...state,
         activeFilters: [...state.activeFilters, action.payload],
       };
+    case ActionType.REMOVE_ACTIVE_FILTER:
+      return {
+        ...state, 
+        activeFilters: state.activeFilters.filter(filter => action.payload !== filter),
+      }
     case ActionType.RESET:
       return { ...initialState };
     default:

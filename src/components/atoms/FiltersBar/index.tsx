@@ -12,10 +12,17 @@ export const FiltersBar: FC = () => {
     })
   }
 
+  const removeFilter = (filter: string) => {
+    dispatch({
+      type: ActionType.REMOVE_ACTIVE_FILTER, 
+      payload: filter,
+    })
+  }
+
   return (
     <div className={styles.wrapper}>
       {state.activeFilters.map((filter, index) => (
-        <FilterButton filter={filter} key={index} />
+        <FilterButton filter={filter} key={index} onClick={() => removeFilter(filter)} />
       ))}
       <button className={styles.clearButton} onClick={clearFilters}>Clear</button>
     </div>
