@@ -48,10 +48,6 @@
       border: unset;
     }
 
-    @media (min-width: $screen-lg) {
-      row-gap: 20px;
-    }
-
     .mainInfoWrapper {
       display: flex;
       align-items: center;
