@@ -24,8 +24,8 @@
     height: 70px;
     transform: translateY(-50%);
     @media (min-width: $screen-md) {
-      width: unset;
-      height: unset;
+      width: 120px;
+      height: 120px;
       transform: unset;
       padding: 25px;
     }
@@ -43,9 +43,13 @@
     border-bottom: 1px solid $dark-grayish;
 
     @media (min-width: $screen-md) {
-      row-gap: 20px;
+      row-gap: 10px;
       padding-bottom: unset;
       border: unset;
+    }
+
+    @media (min-width: $screen-lg) {
+      row-gap: 20px;
     }
 
     .mainInfoWrapper {
@@ -98,12 +102,14 @@
   .filtersWrapper {
     display: flex;
     flex-wrap: wrap;
+    max-width: 300px;
     column-gap: 15px;
     row-gap: 10px;
     margin-left: 10px;
     padding: 15px 0 15px 0;
 
     @media (min-width: $screen-lg) {
+      max-width: unset;
       row-gap: unset;
       padding: 0 55px;
       margin-left: unset;
