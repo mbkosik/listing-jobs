@@ -22,10 +22,10 @@ export const FiltersBar: FC = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.filtersWrapper}>
-        {state.activeFilters.map((filter, index) => (
+        {state.activeFilters.map((filter) => (
           <FilterButton
             filter={filter}
-            key={index}
+            key={filter}
             onClick={() => removeFilter(filter)}
           />
         ))}

@@ -52,8 +52,8 @@ export const JobItem: FC<IJobItemProps> = ({ job }) => {
         </div>
       </div>
       <div className={styles.filtersWrapper}>
-        {filterContent.map((filter, index) => (
-          <FilterButton filter={filter} key={index} onClick={() => handleActiveFilter(filter)} />
+        {filterContent.map((filter) => (
+          <FilterButton filter={filter} key={filter} onClick={() => handleActiveFilter(filter)} />
         ))}
       </div>
     </div>
