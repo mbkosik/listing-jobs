@@ -1,13 +1,13 @@
-import Logo1 from './../assets/photosnap.svg';
-import Logo2 from './../assets/manage.svg';
-import Logo3 from './../assets/account.svg';
-import Logo4 from './../assets/myhome.svg';
-import Logo5 from './../assets/loop-studios.svg';
-import Logo6 from './../assets/faceit.svg';
-import Logo7 from './../assets/shortly.svg';
-import Logo8 from './../assets/insure.svg';
-import Logo9 from './../assets/eyecam-co.svg';
-import Logo10 from './../assets/the-air-filter-company.svg';
+import Logo1 from 'assets/photosnap.svg';
+import Logo2 from 'assets/manage.svg';
+import Logo3 from 'assets/account.svg';
+import Logo4 from 'assets/myhome.svg';
+import Logo5 from 'assets/loop-studios.svg';
+import Logo6 from 'assets/faceit.svg';
+import Logo7 from 'assets/shortly.svg';
+import Logo8 from 'assets/insure.svg';
+import Logo9 from 'assets/eyecam-co.svg';
+import Logo10 from 'assets/the-air-filter-company.svg';
 
 export interface IJobDataProps {
   id: number;

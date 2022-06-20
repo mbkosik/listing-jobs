@@ -1,8 +1,8 @@
 import { FC } from "react";
 import styles from "./JobList.module.scss";
-import { FiltersBar } from "../../atoms/FiltersBar";
-import { JobItem } from "../../atoms/JobItem";
-import { JOB_DATA } from "./../../../data/data";
+import { FiltersBar } from "components/atoms/FiltersBar";
+import { JobItem } from "components/atoms/JobItem";
+import { JOB_DATA } from "data/data";
 
 export const JobList: FC = () => {
   return (

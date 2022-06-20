@@ -1,6 +1,6 @@
 import { FC } from "react";
-import { ActionType, useJobStore } from "../../../context/job.context";
-import { FilterButton } from "../FilterButton";
+import { ActionType, useJobStore } from "context/job.context";
+import { FilterButton } from "components/atoms/FilterButton";
 import styles from "./FiltersBar.module.scss";
 
 export const FiltersBar: FC = () => {

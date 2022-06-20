@@ -1,7 +1,7 @@
 import { FC, useEffect, useState, useRef } from "react";
-import { FilterButton } from "../FilterButton";
+import { FilterButton } from "components/atoms/FilterButton";
 import { IJobItemProps } from "./types";
-import { ActionType, useJobStore } from "../../../context/job.context";
+import { ActionType, useJobStore } from "context/job.context";
 import classNames from "classnames";
 import styles from "./JobItem.module.scss";
 
