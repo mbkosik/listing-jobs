@@ -1,5 +1,13 @@
 @import "styles/variables/index";
 
+@mixin job-item-info {
+  display: block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  color: $white;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -57,24 +65,14 @@
       column-gap: 15px;
 
       .new {
-        display: block;
-        padding: 5px 10px;
-        border-radius: 20px;
+        @include job-item-info;
         background-color: $primary-cyan;
-        text-transform: uppercase;
-        color: $white;
       }
 
       .featured {
-        display: block;
-        padding: 5px 10px;
-        border-radius: 20px;
+        @include job-item-info;
         background-color: $very-dark-grayish;
-        text-transform: uppercase;
-        color: $white;
       }
-
-      // TODO: add mixin to .featured and .new??
     }
 
     .detailsWrapper {
