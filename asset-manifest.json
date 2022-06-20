@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/listing-jobs/static/css/main.728bb058.css",
+    "main.css": "/listing-jobs/static/css/main.f97ebc5b.css",
     "main.js": "/listing-jobs/static/js/main.4abdcb5f.js",
     "static/media/loop-studios.svg": "/listing-jobs/static/media/loop-studios.7778c957c5751d1502cc594d020e34ba.svg",
     "static/media/photosnap.svg": "/listing-jobs/static/media/photosnap.5a867c13a374d62b400f967f5469d0b1.svg",
@@ -11,13 +11,14 @@
     "static/media/shortly.svg": "/listing-jobs/static/media/shortly.3c01b577742e2648f6f987e088368dd3.svg",
     "static/media/myhome.svg": "/listing-jobs/static/media/myhome.aaaaa430346f24f652d52f2f1fb2d5b8.svg",
     "static/media/the-air-filter-company.svg": "/listing-jobs/static/media/the-air-filter-company.9b55f6443c39f7b79348bce1335fbc7d.svg",
+    "static/media/bg-header-desktop.svg": "/listing-jobs/static/media/bg-header-desktop.752d0faf14c00c6fb55f.svg",
     "static/media/faceit.svg": "/listing-jobs/static/media/faceit.54a148ce9e8793ff767eb7ad09aa0f8a.svg",
     "index.html": "/listing-jobs/index.html",
-    "main.728bb058.css.map": "/listing-jobs/static/css/main.728bb058.css.map",
+    "main.f97ebc5b.css.map": "/listing-jobs/static/css/main.f97ebc5b.css.map",
     "main.4abdcb5f.js.map": "/listing-jobs/static/js/main.4abdcb5f.js.map"
   },
   "entrypoints": [
-    "static/css/main.728bb058.css",
+    "static/css/main.f97ebc5b.css",
     "static/js/main.4abdcb5f.js"
   ]
 }
