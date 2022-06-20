@@ -6,10 +6,10 @@ body {
   font-size: $small-size;
   background-color: $light-grayish-bg;
   color: $primary-cyan;
+  background-image: url("../assets/bg-header-desktop.svg");
+  background-repeat: repeat no-repeat;
 
   @media (min-width: $screen-sm) {
     font-size: $default-size;
   }
 }
-
-// TODO: add background-image
