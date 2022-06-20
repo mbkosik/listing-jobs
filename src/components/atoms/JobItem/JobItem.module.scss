@@ -23,6 +23,11 @@
     width: 70px;
     height: 70px;
     transform: translateY(-50%);
+
+    img {
+      border-radius: 50%;
+    }
+    
     @media (min-width: $screen-md) {
       width: 120px;
       height: 120px;
@@ -30,8 +35,6 @@
       padding: 25px;
     }
   }
-
-  // TODO: set different width/height values in case if uploaded bigger image
 
   .descriptionWrapper {
     display: flex;
