@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { ActionType, useJobStore } from "context/job.context";
 import { FilterButton } from "components/atoms/FilterButton";
+import classNames from "classnames";
 import styles from "./FiltersBar.module.scss";
 
 export const FiltersBar: FC = () => {
@@ -20,7 +21,12 @@ export const FiltersBar: FC = () => {
   };
 
   return (
-    <div className={styles.wrapper}>
+    <div
+      className={classNames([
+        styles.wrapper,
+        !state.activeFilters.length && styles.hidden,
+      ])}
+    >
       <div className={styles.filtersWrapper}>
         {state.activeFilters.map((filter) => (
           <FilterButton
