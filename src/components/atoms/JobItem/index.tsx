@@ -8,7 +8,7 @@ import styles from "./JobItem.module.scss";
 export const JobItem: FC<IJobItemProps> = ({ job }) => {
   const { state, dispatch } = useJobStore();
   const [active, setActive] = useState(false); 
-  const filterContent = [job.role, job.level, ...job.languages, ...job.tools];
+  const filterContent = [job.role, job.level, ...job.languages ?? [], ...job.tools ?? []];
   const jobFiltersRef = useRef(filterContent);
 
   const handleActiveFilter = (filter: string) => {
