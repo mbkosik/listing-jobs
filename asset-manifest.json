@@ -1,24 +1,14 @@
 {
   "files": {
     "main.css": "/listing-jobs/static/css/main.34f46568.css",
-    "main.js": "/listing-jobs/static/js/main.d4b56927.js",
-    "static/media/loop-studios.svg": "/listing-jobs/static/media/loop-studios.7778c957c5751d1502cc594d020e34ba.svg",
-    "static/media/photosnap.svg": "/listing-jobs/static/media/photosnap.5a867c13a374d62b400f967f5469d0b1.svg",
-    "static/media/manage.svg": "/listing-jobs/static/media/manage.5a528a9669728fb94c8cac60ad73882f.svg",
-    "static/media/insure.svg": "/listing-jobs/static/media/insure.4d535e7e02c25d02b163c28b8d893f42.svg",
-    "static/media/account.svg": "/listing-jobs/static/media/account.903d6cd02abadf4b4d6025e127c92838.svg",
-    "static/media/eyecam-co.svg": "/listing-jobs/static/media/eyecam-co.0abb14e8a292eed471d54c4bb0eee875.svg",
-    "static/media/shortly.svg": "/listing-jobs/static/media/shortly.3c01b577742e2648f6f987e088368dd3.svg",
-    "static/media/myhome.svg": "/listing-jobs/static/media/myhome.aaaaa430346f24f652d52f2f1fb2d5b8.svg",
-    "static/media/the-air-filter-company.svg": "/listing-jobs/static/media/the-air-filter-company.9b55f6443c39f7b79348bce1335fbc7d.svg",
+    "main.js": "/listing-jobs/static/js/main.37ff1506.js",
     "static/media/bg-header-desktop.svg": "/listing-jobs/static/media/bg-header-desktop.752d0faf14c00c6fb55f.svg",
-    "static/media/faceit.svg": "/listing-jobs/static/media/faceit.54a148ce9e8793ff767eb7ad09aa0f8a.svg",
     "index.html": "/listing-jobs/index.html",
     "main.34f46568.css.map": "/listing-jobs/static/css/main.34f46568.css.map",
-    "main.d4b56927.js.map": "/listing-jobs/static/js/main.d4b56927.js.map"
+    "main.37ff1506.js.map": "/listing-jobs/static/js/main.37ff1506.js.map"
   },
   "entrypoints": [
     "static/css/main.34f46568.css",
-    "static/js/main.d4b56927.js"
+    "static/js/main.37ff1506.js"
   ]
 }
