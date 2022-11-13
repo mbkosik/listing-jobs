@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/listing-jobs/static/css/main.34f46568.css",
+    "main.css": "/listing-jobs/static/css/main.1b12fb03.css",
     "main.js": "/listing-jobs/static/js/main.37ff1506.js",
+    "static/media/LeagueSpartan-VariableFont_wght.ttf": "/listing-jobs/static/media/LeagueSpartan-VariableFont_wght.596f54f303afb90cbfb0.ttf",
     "static/media/bg-header-desktop.svg": "/listing-jobs/static/media/bg-header-desktop.752d0faf14c00c6fb55f.svg",
     "index.html": "/listing-jobs/index.html",
-    "main.34f46568.css.map": "/listing-jobs/static/css/main.34f46568.css.map",
+    "main.1b12fb03.css.map": "/listing-jobs/static/css/main.1b12fb03.css.map",
     "main.37ff1506.js.map": "/listing-jobs/static/js/main.37ff1506.js.map"
   },
   "entrypoints": [
-    "static/css/main.34f46568.css",
+    "static/css/main.1b12fb03.css",
     "static/js/main.37ff1506.js"
   ]
 }
